@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuxLink — Community-powered coordination for shelter animals</title>
+  <meta name="description" content="LuxLink is a mobile-first coordination platform for municipal shelters and the communities that support them.">
+  <style>
+    :root{
+      --bg:#f7f4ee;
+      --panel:#fffdf9;
+      --text:#1d2430;
+      --muted:#667085;
+      --line:#e7e2d9;
+      --accent:#0f2747;
+      --soft:#ece6dc;
+      --warm:#c8876f;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px}
+    .brand img{width:48px;height:48px;object-fit:contain;border-radius:12px;background:white}
+    .pill{border:1px solid var(--line);padding:9px 14px;border-radius:999px;color:var(--muted);font-size:14px}
+    .hero{padding:72px 0 56px;display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}
+    h1{font-size:64px;line-height:1.02;letter-spacing:-2.5px;margin:0 0 22px;max-width:760px}
+    .sub{font-size:22px;color:var(--muted);max-width:720px;margin-bottom:28px}
+    .tag{display:inline-block;background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-weight:650;margin-bottom:18px}
+    .hero-card{background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 18px 45px rgba(15,39,71,.07)}
+    .hero-card img{width:100%;display:block;border-radius:22px}
+    .cta{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:14px 20px;border-radius:14px;font-weight:750}
+    .secondary{margin-left:10px;color:var(--text);text-decoration:none;font-weight:650}
+    .section{padding:72px 0;border-top:1px solid var(--line)}
+    .section h2{font-size:38px;letter-spacing:-1px;margin:0 0 16px}
+    .section p.lead{font-size:19px;color:var(--muted);max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .card h3{margin:0 0 8px;font-size:20px}
+    .card p{margin:0;color:var(--muted)}
+    .mission{background:var(--accent);color:white;border-radius:28px;padding:42px;margin-top:26px}
+    .mission p{font-size:24px;max-width:850px;margin:0}
+    .small{font-size:14px;color:var(--muted)}
+    footer{padding:42px 0 60px;color:var(--muted);font-size:14px}
+    @media(max-width:800px){
+      .hero{grid-template-columns:1fr;padding-top:44px}
+      h1{font-size:44px;letter-spacing:-1.7px}
+      .grid{grid-template-columns:1fr}
+      .hero-card{max-width:420px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <img src="luxlink-logo.png" alt="LuxLink logo">
+        <span>LuxLink</span>
+      </div>
+      <div class="pill">Building our first pilot</div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <div class="tag">Community-powered coordination for shelter animals</div>
+        <h1>Help shelter communities act faster when animals need them.</h1>
+        <p class="sub">
+          LuxLink is a mobile-first coordination platform for municipal shelters and the communities that support them.
+          It helps coordinate foster placements, temporary takeovers, transport, adoption-hours support, and volunteer needs in one place.
+        </p>
+        <a class="cta" href="#about">Learn more</a>
+        <a class="secondary" href="#mission">Our mission</a>
+      </div>
+      <div class="hero-card">
+        <img src="luxlink-logo.png" alt="LuxLink dog mascot">
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>Built around the people who show up.</h2>
+      <p class="lead">
+        Municipal shelters often have dedicated communities of vetted fosters, transporters, volunteers, donors, and staff.
+        LuxLink gives those communities a clearer way to coordinate needs, respond quickly, and know when help is still needed.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Targeted mobile alerts</h3>
+          <p>Notify the right people when a foster, takeover, transport, or volunteer need comes up.</p>
+        </div>
+        <div class="card">
+          <h3>Live coordination</h3>
+          <p>See who offered, who was contacted, and when a need is actually covered.</p>
+        </div>
+        <div class="card">
+          <h3>Community recognition</h3>
+          <p>Celebrate the people who step up and reinforce the community that makes shelter support possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mission">
+      <h2>Mission</h2>
+      <div class="mission">
+        <p>
+          At its core, LuxLink is built to help municipal shelters mobilize the caring communities that make better outcomes for animals possible.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Starting with foster coordination.</h2>
+      <p class="lead">
+        LuxLink is beginning with the workflows municipal shelters already rely on every day: foster placement, short-term takeovers,
+        transport, adoption-hours coverage, and community volunteer asks.
+      </p>
+      <p class="small">LuxLink is currently in development.</p>
+    </section>
+
+    <footer>
+      © LuxLink
+    </footer>
+  </div>
+</body>
+</html>
